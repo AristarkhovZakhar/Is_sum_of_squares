@@ -14,3 +14,6 @@ def sieveOfEratosthenes(n):
             good_sieve.append(i)
     a = ",".join(map(str,sieveOfEratosthenes(100000)))
     return a
+
+if __name__ == "__main__":
+    print(sieveOfEratosthenes(10**6)
