@@ -1,0 +1,16 @@
+def is_sum_of_squares(k:int):
+  if k < 3:
+    return True
+  while k&1:
+    k<<=1
+  lim = floor(k)+1
+  for i in range(3, lim, 2):
+    s = 0
+    while k % i == 0:
+      k /= i
+      s+=1
+    if i&3 == 3 and s&1 == 1:
+      return False
+    return True
+
+print(is_sum_of_square(1000000))
