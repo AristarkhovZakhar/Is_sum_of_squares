@@ -16,4 +16,4 @@ def sieveOfEratosthenes(n):
     return a
 
 if __name__ == "__main__":
-    print(sieveOfEratosthenes(10**6)
+    print(sieveOfEratosthenes(10**6))
